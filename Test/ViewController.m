@@ -97,6 +97,8 @@
     int *y = &x;
     NSLog(@"%ld",sizeof(x)); //4
     NSLog(@"%ld",sizeof(y)); //8
+    
+    NSLog(@"测试一下");
 }
 
 - (void)viewWillAppear:(BOOL)animated{
