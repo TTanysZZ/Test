@@ -20,30 +20,40 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - FMDB (2.5):
+    - FMDB/standard (= 2.5)
+  - FMDB/common (2.5)
+  - FMDB/standard (2.5):
+    - FMDB/common
   - MJExtension (3.0.3)
   - MJRefresh (3.0.2)
   - SDWebImage (3.7.3):
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
   - SVProgressHUD (1.1.3)
+  - WToast (1.0)
   - YYText (0.9.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.6.3)
+  - FMDB (~> 2.5)
   - MJExtension (~> 3.0.3)
   - MJRefresh (~> 3.0.2)
   - SDWebImage (~> 3.7.3)
   - SVProgressHUD (~> 1.1.3)
+  - WToast (~> 1.0)
   - YYText
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
   MJExtension: de557e1c48ef3212590d3203764c8003fae68815
   MJRefresh: 85377dc8c70395cf329e102a5c55505ef387c2e1
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
   SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
+  WToast: 9e30f41c288f72a1bbff8b8ab490e2af2daea147
   YYText: 67a80bd0ac293832dae4830c7e25f837ffd99488
 
-PODFILE CHECKSUM: 2cdefa6185479116e703dcb496daa41f5d810929
+PODFILE CHECKSUM: b8474f52ca2e7aa6d8750a81f34bc06256bd588a
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.0.1

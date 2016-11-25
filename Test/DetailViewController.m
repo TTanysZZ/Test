@@ -9,6 +9,8 @@
 #import "DetailViewController.h"
 #import <SVProgressHUD/SVProgressHUD.h>
 #import "NextViewController.h"
+#import <WToast/WToast.h>
+#import <FMDB/FMDB.h>
 
 @interface DetailViewController ()
 
@@ -50,7 +52,26 @@
     }
     
     
-    
+//    NSBlockOperation *block = [NSBlockOperation blockOperationWithBlock:^{
+//        
+//        // 这种方式创建的timer 必须手动添加到Runloop中去才会被调用
+//        NSTimer *timer = [NSTimer timerWithTimeInterval:2.0 target:self selector:@selector(time) userInfo:nil repeats:YES];
+//        
+//        [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+//        NSLog(@"--%@--",[NSRunLoop currentRunLoop]);
+//        // 同时让RunLoop跑起来
+//        [[NSRunLoop currentRunLoop] run];
+//        
+//    }];
+//    
+//    [[[NSOperationQueue alloc] init] addOperation:block];
+//    
+//    NSTimer *timer2 = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(run) userInfo:nil repeats:YES];
+//    
+////    [[NSRunLoop currentRunLoop] run];
+//    
+//    [[NSRunLoop currentRunLoop] addTimer:timer2 forMode:UITrackingRunLoopMode];
+//    NSLog(@"---%@---",[NSRunLoop currentRunLoop]);
 }
 
 - (IBAction)backBtnClicked:(id)sender {
@@ -69,25 +90,22 @@
 
 - (IBAction)nestBtnClicked:(id)sender {
     
-    NextViewController *nextVc = [[NextViewController alloc] init];
-    [self presentViewController:nextVc animated:YES completion:nil];
+//    NextViewController *nextVc = [[NextViewController alloc] init];
+//    [self presentViewController:nextVc animated:YES completion:nil];
     
+    [WToast showWithText:@"提示内容"];
 }
 
+- (void)time{
+    NSLog(@"调用了time");
+}
+- (void)run{
+    NSLog(@"调用了run");
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

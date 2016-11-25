@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FMDB.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MJExtension.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -34,6 +39,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>WToast.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>YYText.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,37 +52,47 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>390A89528A7D21B5FF9BCF968BF947B2</key>
+		<key>3508385D531F8F6BB3EF8E9D351CE614</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>47F1908100E663FE8E06B96ACD8191D3</key>
+		<key>410B25DF16EA5C5B3E2698F74F9625FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>496643A0C6647A237EA495B023CFA1A7</key>
+		<key>48971232DAB6348697CD66764F87E4CA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>703D51E7EAEE97729466B2C4C645B08C</key>
+		<key>5A5D51BF5B1E8409E81047B9C07414DB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>80D551060CDA12C4163C856A1B28325A</key>
+		<key>847C2F2A5B27FCEDBE53AFC2D48426FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AFAFB55453D161D2BB5CFB30C68A54D5</key>
+		<key>8F74D9EA91F4C43190670066BAC37D44</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D3C7B4DE7CD80445FAB0980F93D30706</key>
+		<key>9F12FB4A63E20F601CFB2E64A65B57C1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ABFFA92F6F15BCCD21AD68E9D2D70323</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B23B3D15FFC0FC9893968F478086D58D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
