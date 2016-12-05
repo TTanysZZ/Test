@@ -12,5 +12,8 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *btn;
 
+@property (weak, nonatomic) IBOutlet UIButton *rtfBtn;
+
+
 @end
 

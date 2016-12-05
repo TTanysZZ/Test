@@ -90,10 +90,10 @@
 
 - (IBAction)nestBtnClicked:(id)sender {
     
-//    NextViewController *nextVc = [[NextViewController alloc] init];
-//    [self presentViewController:nextVc animated:YES completion:nil];
+    NextViewController *nextVc = [[NextViewController alloc] init];
+    [self presentViewController:nextVc animated:YES completion:nil];
     
-    [WToast showWithText:@"提示内容"];
+//    [WToast showWithText:@"提示内容"];
 }
 
 - (void)time{

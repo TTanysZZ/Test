@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "DetailViewController.h"
+#import "RTFViewController.h"
 
 #import <AFNetworking/AFNetworking.h>
 #import <SDWebImage/UIImageView+WebCache.h>
@@ -100,6 +101,16 @@
     
     NSLog(@"测试一下");
 }
+
+- (IBAction)rtfBtnClicked:(id)sender {
+    
+    RTFViewController *rtfVc = [[RTFViewController alloc] init];
+    
+    [self presentViewController:rtfVc animated:YES completion:^{
+        
+    }];
+}
+
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];

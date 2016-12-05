@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4318A12D1DCE4BCF00DB375F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4318A12B1DCE4BCF00DB375F /* DetailViewController.m */; };
 		4318A12E1DCE4BCF00DB375F /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4318A12C1DCE4BCF00DB375F /* DetailViewController.xib */; };
+		432D14721DF57D50000A973D /* RTFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 432D14701DF57D50000A973D /* RTFViewController.m */; };
+		432D14731DF57D50000A973D /* RTFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 432D14711DF57D50000A973D /* RTFViewController.xib */; };
 		437E88811DCD030F00D31F11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 437E88801DCD030F00D31F11 /* main.m */; };
 		437E88841DCD030F00D31F11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 437E88831DCD030F00D31F11 /* AppDelegate.m */; };
 		437E88871DCD030F00D31F11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 437E88861DCD030F00D31F11 /* ViewController.m */; };
@@ -28,6 +30,9 @@
 		4318A12A1DCE4BCF00DB375F /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		4318A12B1DCE4BCF00DB375F /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		4318A12C1DCE4BCF00DB375F /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		432D146F1DF57D50000A973D /* RTFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTFViewController.h; sourceTree = "<group>"; };
+		432D14701DF57D50000A973D /* RTFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTFViewController.m; sourceTree = "<group>"; };
+		432D14711DF57D50000A973D /* RTFViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RTFViewController.xib; sourceTree = "<group>"; };
 		437E887C1DCD030F00D31F11 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		437E88801DCD030F00D31F11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		437E88821DCD030F00D31F11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -93,6 +98,9 @@
 				437E88831DCD030F00D31F11 /* AppDelegate.m */,
 				437E88851DCD030F00D31F11 /* ViewController.h */,
 				437E88861DCD030F00D31F11 /* ViewController.m */,
+				432D146F1DF57D50000A973D /* RTFViewController.h */,
+				432D14701DF57D50000A973D /* RTFViewController.m */,
+				432D14711DF57D50000A973D /* RTFViewController.xib */,
 				4318A12A1DCE4BCF00DB375F /* DetailViewController.h */,
 				4318A12B1DCE4BCF00DB375F /* DetailViewController.m */,
 				4318A12C1DCE4BCF00DB375F /* DetailViewController.xib */,
@@ -156,7 +164,7 @@
 		437E88741DCD030F00D31F11 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = TTanys;
 				TargetAttributes = {
 					437E887B1DCD030F00D31F11 = {
@@ -188,6 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				432D14731DF57D50000A973D /* RTFViewController.xib in Resources */,
 				43AB76441DD1E14900E9EF95 /* LastViewController.xib in Resources */,
 				437E888F1DCD030F00D31F11 /* LaunchScreen.storyboard in Resources */,
 				437E888C1DCD030F00D31F11 /* Assets.xcassets in Resources */,
@@ -256,6 +265,7 @@
 				437E88871DCD030F00D31F11 /* ViewController.m in Sources */,
 				437E88841DCD030F00D31F11 /* AppDelegate.m in Sources */,
 				437E88811DCD030F00D31F11 /* main.m in Sources */,
+				432D14721DF57D50000A973D /* RTFViewController.m in Sources */,
 				43AB76431DD1E14900E9EF95 /* LastViewController.m in Sources */,
 				4318A12D1DCE4BCF00DB375F /* DetailViewController.m in Sources */,
 			);
@@ -297,8 +307,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -342,8 +354,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -374,6 +388,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = HV4L58Y949;
 				INFOPLIST_FILE = Test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -390,6 +405,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = HV4L58Y949;
 				INFOPLIST_FILE = Test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

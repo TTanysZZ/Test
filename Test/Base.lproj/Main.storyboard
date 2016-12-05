@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -23,14 +27,14 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hl-0h-ZYi">
                                         <rect key="frame" x="50" y="100" width="123" height="327"/>
-                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="按钮"/>
                                         <connections>
                                             <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aJ5-2q-dI1"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.1241011709" blue="0.06155963775" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.1241011709" blue="0.06155963775" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="4hl-0h-ZYi" firstAttribute="top" secondItem="9ar-OM-1QV" secondAttribute="top" constant="100" id="1q7-wf-QQu"/>
                                     <constraint firstItem="4hl-0h-ZYi" firstAttribute="leading" secondItem="9ar-OM-1QV" secondAttribute="leading" constant="50" id="Es2-Jt-hih"/>
@@ -38,18 +42,32 @@
                                     <constraint firstAttribute="bottom" secondItem="4hl-0h-ZYi" secondAttribute="bottom" constant="100" id="ec4-Nd-GGT"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wA-ZV-mJw">
+                                <rect key="frame" x="289" y="320" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="G5b-2m-1Bj"/>
+                                    <constraint firstAttribute="width" constant="80" id="JpY-n6-iWZ"/>
+                                </constraints>
+                                <state key="normal" title="富文本"/>
+                                <connections>
+                                    <action selector="rtfBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f2p-cN-etu"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9ar-OM-1QV" secondAttribute="bottom" constant="60" id="M5h-lK-VTH"/>
                             <constraint firstItem="9ar-OM-1QV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="Qjm-sE-4MY"/>
                             <constraint firstItem="9ar-OM-1QV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="fz9-Kv-huB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9ar-OM-1QV" secondAttribute="trailing" constant="60" id="jvd-mx-mky"/>
+                            <constraint firstItem="2wA-ZV-mJw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="300" id="lzp-So-dBl"/>
+                            <constraint firstItem="2wA-ZV-mJw" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="10" id="rY9-Wm-iuT"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="btn" destination="4hl-0h-ZYi" id="JGG-7k-wTS"/>
+                        <outlet property="rtfBtn" destination="2wA-ZV-mJw" id="Od7-dE-V3a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
