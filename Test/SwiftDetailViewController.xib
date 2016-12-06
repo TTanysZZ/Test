@@ -9,9 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LastViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SwiftDetailViewController" customModule="Test" customModuleProvider="target">
             <connections>
-                <outlet property="backBtn" destination="Kj8-Qq-NqQ" id="xjm-gA-LSj"/>
+                <outlet property="backBtn" destination="o7t-Ou-XR3" id="aJT-Rs-JUl"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,23 +20,24 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kj8-Qq-NqQ">
-                    <rect key="frame" x="0.0" y="64" width="70" height="44"/>
-                    <color key="backgroundColor" red="0.91039912564766845" green="0.33947114976357201" blue="0.40728216551908369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7t-Ou-XR3">
+                    <rect key="frame" x="150" y="200" width="75" height="40"/>
+                    <color key="backgroundColor" red="0.24874749348665265" green="0.91039912564766845" blue="0.87688362726919089" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="70" id="6f5-Rn-vMa"/>
-                        <constraint firstAttribute="height" constant="44" id="YyP-4A-F9A"/>
+                        <constraint firstAttribute="height" constant="40" id="Ak1-bJ-QTC"/>
                     </constraints>
-                    <state key="normal" title="backBtn"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Back"/>
                     <connections>
-                        <action selector="backBtnClicked:" destination="-1" eventType="touchUpInside" id="nnH-mC-VwC"/>
+                        <action selector="backBtnClicked:" destination="-1" eventType="touchUpInside" id="3XK-tW-WiI"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Kj8-Qq-NqQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="4D8-GM-Chg"/>
-                <constraint firstItem="Kj8-Qq-NqQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9sp-nO-2hv"/>
+                <constraint firstItem="o7t-Ou-XR3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="200" id="LAK-gc-Pzx"/>
+                <constraint firstAttribute="trailing" secondItem="o7t-Ou-XR3" secondAttribute="trailing" constant="150" id="TLZ-PP-0SG"/>
+                <constraint firstItem="o7t-Ou-XR3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="150" id="fB1-ax-sQQ"/>
             </constraints>
         </view>
     </objects>

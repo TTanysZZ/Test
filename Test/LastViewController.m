@@ -10,6 +10,7 @@
 #import <WebKit/WebKit.h>
 
 @interface LastViewController ()<WKUIDelegate,WKNavigationDelegate>
+@property (weak, nonatomic) IBOutlet UIButton *backBtn;
 
 @end
 
@@ -27,6 +28,7 @@
     [wkView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.baidu.com"]]];
     [self.view addSubview:wkView];
     
+    [self.view bringSubviewToFront:_backBtn];
 }
 
 #pragma mark = WKNavigationDelegate
@@ -80,6 +82,11 @@
     }
     return nil;
 }
+
+- (IBAction)backBtnClicked:(id)sender {
+    [self.navigationController popViewControllerAnimated:true];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

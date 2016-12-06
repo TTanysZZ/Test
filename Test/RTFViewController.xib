@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RTFViewController">
             <connections>
                 <outlet property="backBtn" destination="fxg-3O-fW6" id="4H0-XP-tz5"/>
+                <outlet property="swiftBtn" destination="SXV-6w-dDy" id="4tG-al-r0G"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -31,12 +32,26 @@
                         <action selector="backBtnClicked:" destination="-1" eventType="touchUpInside" id="OCV-XM-vcb"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXV-6w-dDy">
+                    <rect key="frame" x="325" y="637" width="50" height="30"/>
+                    <color key="backgroundColor" red="0.89656319034192633" green="0.55569136339595127" blue="0.91039912564766845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Os3-cy-5N3"/>
+                        <constraint firstAttribute="width" constant="50" id="q5K-Vt-IpP"/>
+                    </constraints>
+                    <state key="normal" title="Swift"/>
+                    <connections>
+                        <action selector="swiftBtnClicked:" destination="-1" eventType="touchUpInside" id="OMU-wa-6Lx"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="fxg-3O-fW6" secondAttribute="trailing" constant="100" id="7V5-59-Yb5"/>
                 <constraint firstAttribute="bottom" secondItem="fxg-3O-fW6" secondAttribute="bottom" constant="10" id="USZ-sG-qMl"/>
+                <constraint firstAttribute="bottom" secondItem="SXV-6w-dDy" secondAttribute="bottom" id="Wjp-VB-xgn"/>
                 <constraint firstItem="fxg-3O-fW6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="100" id="mQh-pZ-dWP"/>
+                <constraint firstAttribute="trailing" secondItem="SXV-6w-dDy" secondAttribute="trailing" id="mlN-x8-6NB"/>
             </constraints>
         </view>
     </objects>
