@@ -15,6 +15,7 @@ class SwiftDetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        title = "swift detail"
     }
     @IBAction func backBtnClicked(_ sender: Any) {
         print("\((sender as! UIButton).currentTitle)")

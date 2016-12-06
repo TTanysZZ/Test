@@ -35,6 +35,9 @@ class SwiftViewController: UIViewController {
         print("tap did")
         let swiftDetailVc = SwiftDetailViewController()
         self.navigationController?.pushViewController(swiftDetailVc, animated: true)
+//        self.present(swiftDetailVc, animated: true, completion: (() -> Void)?{
+//            print("completion调用了")
+//            })
     }
     
 //    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
