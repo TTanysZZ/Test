@@ -16,7 +16,9 @@ class SwiftDetailViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         title = "swift detail"
+        print("---\(self.title)")
     }
+    
     @IBAction func backBtnClicked(_ sender: Any) {
         print("\((sender as! UIButton).currentTitle)")
         _ = navigationController?.popViewController(animated: true)
